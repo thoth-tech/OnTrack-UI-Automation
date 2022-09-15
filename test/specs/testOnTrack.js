@@ -4,7 +4,7 @@ const { Builder, By, Key } = require("selenium-webdriver");
 var assert = require("chai").assert;
 
 describe("Test001", () => {
-  it.only("Login As Admin", async function () {
+  it("Login As Admin", async function () {
     let AdminUser = "aadmin";
     let pass = "password";
     let driver = new Builder().forBrowser("chrome").build();
